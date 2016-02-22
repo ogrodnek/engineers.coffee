@@ -1,0 +1,57 @@
+{% extends "blog.html" %}
+
+{% block title %}{{ title }} | Sandwich News {% endblock title %}
+
+{% block content %}
+
+<section id="wrapper" class="group">
+	<header id="header">
+
+	</header>
+
+	<article class="post">
+		<header>
+			<h2>{{ title }}</h2>
+			<p class="blog-post-meta"> {{ date|date:"M j, Y" }} </p>
+		</header>
+		<section id="post-body">
+			{% block body %}
+				This is where the post contents is.
+			{% endblock body %}
+		</section>
+			<p class="post-tags">
+				{% for tag in tags %}
+				 <a href="#" class="btn btn-primary btn-xs">{{ tag }}</a>
+				{% endfor %}
+		    </p>        
+
+        <hr />
+	</article>
+
+	<footer>
+        
+	<nav id="post-nav">
+		<span class="prev">
+			{% if prevPost %}
+				<a href='/{{ prevPost.path }}'>
+					<span class="arrow">&larr;</span> {{ prevPost.title }}
+				</a>
+			{% endif %}
+		</span>
+
+		{% if nextPost and prevPost %} 
+		  |
+		{% endif %}
+
+		<span class="next">
+			{% if nextPost %}
+				<a href='/{{ nextPost.path }}'>
+					{{ nextPost.title }} <span class="arrow">&rarr;</span>
+				</a>
+			{% endif %}
+		</span>
+	</nav>
+	</footer>
+</section> 
+
+{% endblock content %}

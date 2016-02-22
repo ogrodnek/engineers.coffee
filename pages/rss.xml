@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+
+  <channel>
+    <title>Engineers &amp; Coffee</title>
+    <link>http://engineers.coffee</link>
+    <lastBuildDate>{{ posts.0.date|date:"r" }}</lastBuildDate>
+    <language>en-US</language>
+    <itunes:author>Donnie Flood, Larry Ogrodnek</itunes:author>
+    <itunes:subtitle>weekly aws/cloud/tech podcast</itunes:subtitle>
+    <itunes:summary>weekly aws/cloud/tech podcast</itunes:summary>
+    <description>weekly aws/cloud/tech podcast</description>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:keywords>tech,technology,aws,cloud,programming,devops,dev</itunes:keywords>
+    <itunes:owner>
+        <itunes:name>contact@engineers.coffee</itunes:name>
+        <itunes:email>contact@engineers.coffee</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Technology"></itunes:category>
+    <itunes:image href="http://engineers.coffee/static/images/episode-cover.png"></itunes:image>
+
+    {% for post in posts %}
+    <item>
+      <title>{{ post.title | force_escape }}</title>
+      <link>http://engineers.coffee/{{ post.short_path }}</link>
+      <guid isPermaLink="false">{{ post.short_path }}</guid>
+      <pubDate>{{ post.date|date:"r" }}</pubDate>
+      <description>{{ post.body | force_escape }}</description>
+      <itunes:author>Engineers &amp; Coffee</itunes:author>
+      <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+      <itunes:image href="http://engineers.coffee/static/images/episode-cover.png"></itunes:image>
+      <enclosure url="http://engineers.coffee/static/episodes/{{ post.date|date:"Y" }}/engineers.coffee.{{ post.date|date:"Y" }}.{{ post.episode }}.mp3" length="{{ post.length }}" type="audio/mpeg" />
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

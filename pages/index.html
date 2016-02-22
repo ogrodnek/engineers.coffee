@@ -1,0 +1,25 @@
+{% extends "blog.html" %}
+{% block content %}
+
+{% for post in posts|slice:":5" %}
+
+<div class="blog-post">
+	<a class="blog-post-title-link" href='/{{ post.short_path }}'>
+	  <h2 class="blog-post-title">{{ post.episode }} : {{ post.title }}</h2>
+	</a>
+	<p class="blog-post-meta">{{ post.date|date:"M j, Y" }}</p>
+
+	<p>
+	  <audio controls>
+	  	<source src="/static/episodes/{{ post.date|date:"Y" }}/engineers.coffee.{{ post.date|date:"Y" }}.{{ post.episode }}.mp3" />
+	  </audio>
+	</p>
+
+	<p>{{ post.body }}</p>
+	<p>
+	  <a href="/static/episodes/{{ post.date|date:"Y" }}/engineers.coffee.{{ post.date|date:"Y" }}.{{ post.episode }}.mp3">download episode mp3</a>
+	</p>
+	<hr>
+</div>
+{% endfor %}
+{% endblock content %}
