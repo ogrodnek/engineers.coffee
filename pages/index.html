@@ -9,14 +9,17 @@
 	</a>
 	<p class="blog-post-meta">{{ post.date|date:"M j, Y" }}</p>
 
-	<p>
+	<p class="blog-post-audio">
 	  <audio controls>
 	  	<source src="/static/episodes/{{ post.date|date:"Y" }}/engineers.coffee.{{ post.date|date:"Y" }}.{{ post.episode }}.mp3" />
 	  </audio>
 	</p>
 
-	<p>{{ post.body }}</p>
-	<p>
+	<div class="blog-post-notes">
+	  <h5>Topics, links, etc:</h5>
+	  <p class="show-notes">{{ post.body }}</p>
+	</div>
+	<p class="download-link">
 	  <a href="/static/episodes/{{ post.date|date:"Y" }}/engineers.coffee.{{ post.date|date:"Y" }}.{{ post.episode }}.mp3">download episode mp3</a>
 	</p>
 	<hr>
