@@ -1,0 +1,27 @@
+episode: 1
+title: it should be obvious at this point
+subtitle: will it lambda, spotify moving their infrastructure to google, banks considering the cloud
+date: 02-29-2016 4:57pm
+duration: 38:29
+length: 55795751
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- Will it Lambda?!?!?!
+  - DNS Server
+  - [Chat Server](https://github.com/cloudnative/lambda-chat)
+    - See also [Dynamic Dashboard](https://medium.com/aws-activate-startup-blog/building-dynamic-dashboards-using-lambda-and-dynamodb-streams-part-1-217e2318ae17#.y5r48qhs3
+)
+  - Send us your crazy lambda projects: lambda@engineers.coffee
+- Spotify moving their infrastructure to Google
+  - [Spotify blog post](https://news.spotify.com/us/2016/02/23/announcing-spotify-infrastructures-googley-future/)
+  - [Wired story](http://www.wired.com/2016/02/spotify-moves-itself-onto-googles-cloud-lucky-for-google/)
+- [Big banks considering AWS](http://www.wsj.com/articles/amazon-web-services-takes-aim-at-big-banks-1456227994)
+
+
+
+{% endfilter %}
+{% endblock body %}
