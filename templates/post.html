@@ -24,6 +24,9 @@
 				This is where the post contents is.
 			{% endblock body %}
 		</section>
+			<p class="download-link">
+	  <a href="/static/episodes/{{ date|date:"Y" }}/engineers.coffee.{{ date|date:"Y" }}.{{ episode }}.mp3">download episode mp3</a>
+	</p>
 			<p class="post-tags">
 				{% for tag in tags %}
 				 <a href="#" class="btn btn-primary btn-xs">{{ tag }}</a>
