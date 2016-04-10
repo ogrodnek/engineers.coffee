@@ -1,0 +1,34 @@
+episode: 8
+title: I can talk to my lambda functions!?!?!
+subtitle: We talk about Amazon Echo and Alexa, writing custom skills with lambda, Alexa on Raspberry Pi, and home automation
+date: 04-10-2016 4:55pm
+duration: 50:50
+length: 37004006
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- [The inside story of how Amazon created Echo, the next billion-dollar business no one saw coming](http://www.businessinsider.com/the-inside-story-of-how-amazon-created-echo-2016-4)
+- Alexa Hardware
+  - [Echo](http://www.amazon.com/gp/product/B00X4WHP5E/?tag=ecpod-20) - $179.99
+  - [Echo Dot](http://www.amazon.com/gp/product/B00VKTZFB4/?tag=ecpod-20) - $89.99 (only available through Alexa)
+  - [Amazon Tap](http://www.amazon.com/gp/product/B00VXS8E8S/?tag=ecpod-20) - $129, portable
+- Alexa Skills Kit (ASK)
+  - [Alexa Skills Quick Start](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/alexa-skill-tutorial)
+  - Sample Code
+      - [alexa-skills-kit-js](https://github.com/amzn/alexa-skills-kit-js)
+          - [Score Keeper](https://github.com/amzn/alexa-skills-kit-js/tree/master/samples/scoreKeeper)
+              - [Declaring Intents](https://github.com/amzn/alexa-skills-kit-js/blob/master/samples/scoreKeeper/speechAssets/SampleUtterances.txt)
+              - [Custom Slot Type](https://github.com/amzn/alexa-skills-kit-js/blob/master/samples/scoreKeeper/speechAssets/customSlotTypes/LIST_OF_PLAYER_NAMES)
+      - [alexa-skills-kit-java](https://github.com/amzn/alexa-skills-kit-java)
+  - [Standard Slot Types](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interaction-model-reference#Slot Types)
+  - [Alexa Fund](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-fund)
+- Alexa Voice Service (AVS)
+  - [Alexa on a Raspberry Pi](https://github.com/amzn/alexa-avs-raspberry-pi)
+- [hackster.io Alexa Skills contest](https://www.hackster.io/challenges/amazon-alexa-skill-contest-one)
+
+
+{% endfilter %}
+{% endblock body %}
