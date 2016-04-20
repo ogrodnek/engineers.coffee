@@ -1,10 +1,21 @@
 #!/bin/bash -e
 
+if [[ $# -ne 1 ]]; then
+	echo "$0 <episode number>"
+	exit 1
+fi
+
+episode=$1
+epath=static/episodes/2016/engineers.coffee.2016.${episode}.mp3
+
 R=`dirname $0`
 
 rm -rf $R/.build
 cactus build
 
 set -x
+
 aws s3 sync $R/.build s3://engineers.coffee --exclude "*.mp3" --cache-control max-age=300
-aws s3 sync $R/.build s3://engineers.coffee --include "*.mp3" --cache-control max-age=600
+
+aws s3 cp $R/.build/${epath} s3://engineers.coffee/${epath} --cache-control max-age=600
+
