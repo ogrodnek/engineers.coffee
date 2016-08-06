@@ -1,0 +1,26 @@
+episode: 14
+title: a lambda native approach
+subtitle: we did our homework! follow-up on iot button, chalice, api gateway, and LambCI
+date: 08-05-2016 11:34pm
+duration: 45:58
+length: 33497553
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- donnie's [iot button](https://aws.amazon.com/iot/button/)
+- Alexa is the best
+  - short digression on alexa (we mostly mean 'echo' here!, and tap), bose soundlink
+  - sad state of bluetooth speakers in general :)
+- larry does his [aws chalice](https://github.com/awslabs/chalice) homework
+  - [api gateway forum on posting binary data](https://forums.aws.amazon.com/thread.jspa?threadID=220351)
+  - [api gateway forum on sending binary data](https://forums.aws.amazon.com/thread.jspa?threadID=195218)
+  - [api gateway forum on redirects](https://forums.aws.amazon.com/thread.jspa?messageID=676533)
+- more on [LambCI](https://github.com/lambci/lambci)
+  - [bootstrapping sbt](https://gist.github.com/ogrodnek/374063c97f44d2970e84b29357d61b63)
+  - [docker lambda](https://github.com/lambci/docker-lambda)
+
+{% endfilter %}
+{% endblock body %}
