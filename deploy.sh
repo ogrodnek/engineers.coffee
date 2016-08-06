@@ -15,7 +15,6 @@ cactus build
 
 set -x
 
-aws s3 sync $R/.build s3://engineers.coffee --exclude "*.mp3" --cache-control max-age=300 --profile analog
+aws s3 sync $R/.build s3://engineers.coffee --exclude "*.mp3" --cache-control max-age=600 --profile analog
 
-aws s3 cp $R/.build/${epath} s3://engineers.coffee/${epath} --cache-control max-age=600 --profile analog
-
+aws s3 cp $R/.build/${epath} s3://engineers.coffee/${epath} --cache-control max-age=1800 --profile analog
