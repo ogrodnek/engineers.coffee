@@ -1,0 +1,26 @@
+episode: 16
+title: that's life as a developer, i suppose
+subtitle: application LB, api usage plans, kinesis analytics, what would alexa do?
+date: 08-30-2016 9:46pm
+duration: 43:35
+length: 31830513
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- aws summit day 2 announcements
+  - [application load balancer](https://aws.amazon.com/blogs/aws/new-aws-application-load-balancer/)
+    - [load balancer copy tool](https://github.com/aws/elastic-load-balancing-tools)
+    - [amazon certificate manager](https://aws.amazon.com/certificate-manager/)
+      - [letsencrypt](https://letsencrypt.org/)
+      - [cloud guru acm article](https://read.acloud.guru/aws-certificate-manager-a-potential-game-changer-abdccf8c579d#.riphos6td)
+  - [api gateway usage plans](https://aws.amazon.com/blogs/aws/new-usage-plans-for-amazon-api-gateway/)
+  - [kinesis analytics](https://aws.amazon.com/blogs/aws/amazon-kinesis-analytics-process-streaming-data-in-real-time-with-sql/)
+- [cloudonaut IAM reference](https://iam.cloudonaut.io/)
+- [what would alexa do?](https://www.oreilly.com/ideas/what-would-alexa-do)
+- [google cloud DBs now in GA](https://cloudplatform.googleblog.com/2016/08/why-Google-Cloud-Platform-is-ready-for-your-enterprise-database-workloads.html)
+
+{% endfilter %}
+{% endblock body %}
