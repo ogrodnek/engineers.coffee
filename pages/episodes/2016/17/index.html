@@ -1,0 +1,30 @@
+episode: 17
+title: feedback is a gift
+subtitle: api gateway, cloudformation updates, YAML vs. JSON for config, API docs, even more on JSON, bots podcast
+date: 09-26-2016 11:02am
+duration: 46:04
+length: 33547241
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- welcome back
+- [new API gateway features](https://aws.amazon.com/blogs/aws/api-gateway-update-new-features-simplify-api-development/)
+- [cloudformation updates](https://aws.amazon.com/blogs/aws/aws-cloudformation-update-yaml-cross-stack-references-simplified-substitution/)
+    -  YAML vs. JSON for configuration
+    - [douglas crockford on rationale for lack of comments in JSON](https://plus.google.com/+DouglasCrockfordEsq/posts/RK8qyGVaGSr)
+
+- taking api documentation seriously
+- [amazon photo printing service](https://www.amazon.com/b?node=14866317011)
+    - [petapixel announcement](http://petapixel.com/2016/09/21/amazon-launches-photo-print-service-sinks-shutterfly-stock/)
+    - [lob.com](https://lob.com/) (email, printing API)
+
+- [new amazon dot v2](https://www.amazon.com/gp/product/B01DFKC2SO/?tag=engineerscoff-20)
+- [O'Reilly bots podcast](https://www.oreilly.com/topics/oreilly-bots-podcast)
+    - [DoNotPay bot](https://www.oreilly.com/ideas/joshua-browder-on-bots-that-fight-bureaucracy)
+- [lambada Java/JAX-RS api gateway/lambda framework](https://github.com/lambadaframework/lambadaframework)
+
+{% endfilter %}
+{% endblock body %}
