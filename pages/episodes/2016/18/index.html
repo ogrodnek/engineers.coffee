@@ -1,0 +1,24 @@
+episode: 18
+title: the documentation wasn't quite complete
+subtitle: Donnie walks us through building an AccountKit sample app with cloud formation, lambda, api gateway, etc.
+date: 10-14-2016 12:16pm
+duration: 27:59
+length: 20530503
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+-  Donnie's Account Kit app lambda project
+    - [Facebook Account Kit](https://developers.facebook.com/docs/accountkit)
+    - [CloudFormer](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-using-cloudformer.html) / CloudFormation
+    - [APIGateway CORS](http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html)
+    - [CloudFront Route53 AliasTarget](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-hostedzoneid)
+    - CloudFormation YAML
+    - ACM / SES email forwarding
+    - CloudFormation scripting / [Lambda CloudFormation extensions](https://aws.amazon.com/blogs/aws/aws-cloudformation-update-lambda-backed-custom-resources-more/)
+      - [trophosphere](https://github.com/cloudtools/troposphere)
+
+
+{% endfilter %}
+{% endblock body %}
