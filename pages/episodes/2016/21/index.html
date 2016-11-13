@@ -1,0 +1,30 @@
+episode: 21
+title: the post-election episode
+subtitle: election disappointment, re:invent 2016, google appengine, serverless mapreduce
+date: 11-12-2016 4:15pm
+duration:
+length:
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- election disappointment
+- [aws re:invent 2016](https://reinvent.awsevents.com/)
+    - sold out
+    - [reserved seating](https://aws.amazon.com/blogs/security/reserved-seating-now-open-for-reinvent-2016-sessions/)
+    - predictions?
+      - go/python/lambda
+      - [swift web on ECS](https://aws.amazon.com/blogs/compute/running-swift-web-applications-with-amazon-ecs/)
+- working with google cloud appengine
+- serverless map/reduce
+  - [pywren](https://github.com/ericmjonas/pywren)
+  - [Extracting 25 TFLOPS from AWS Lambda](http://ericjonas.com/pywren.html)
+  - [making s3 (almost) as fast as local memory](http://ericjonas.com/pywren_s3.html)
+  - [Ad Hoc Big Data Processing Made Simple with Serverless MapReduce](https://aws.amazon.com/blogs/compute/ad-hoc-big-data-processing-made-simple-with-serverless-mapreduce/)
+      - [lambda-refarch-mapreduce](https://github.com/awslabs/lambda-refarch-mapreduce)
+- [Nordstrom serverless-artillery](https://github.com/Nordstrom/serverless-artillery)
+
+{% endfilter %}
+{% endblock body %}
