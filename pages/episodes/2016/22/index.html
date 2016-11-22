@@ -1,0 +1,27 @@
+episode: 22
+title: the pre:invent episode
+subtitle: re:invent, new AWS features
+date: 11-21-2016 6:30pm
+duration: 50:55
+length: 37040845
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- re:invent coming soon
+- new cloudwatch features
+    - [percentile aggregation functions](https://aws.amazon.com/about-aws/whats-new/2016/11/amazon-cloudwatch-adds-support-for-percentiles/)
+    - [increased metrics retention](https://aws.amazon.com/blogs/aws/amazon-cloudwatch-update-extended-metrics-retention-user-interface-update/)
+    - [jump from metrics to associated logs](https://aws.amazon.com/blogs/aws/cloudwatch-update-jump-from-metrics-to-associated-logs/)
+- re:invent sessions
+- [SQS FIFO queues with exactly once processing](https://aws.amazon.com/about-aws/whats-new/2016/11/amazon-sqs-introduces-fifo-queues-with-exactly-once-processing-and-lower-prices-for-standard-queues/)
+- [api gateway binary data support](https://aws.amazon.com/about-aws/whats-new/2016/11/binary-data-now-supported-by-api-gateway/)
+- [trusted advisor automated actions](https://aws.amazon.com/about-aws/whats-new/2016/11/trusted-advisor-enables-automated-actions-and-custom-notifications/)
+- more looking forward to reinvent
+    - [Automated Formal Reasoning about AWS Systems](https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=8311)
+- re:invent predictions?
+
+{% endfilter %}
+{% endblock body %}
