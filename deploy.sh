@@ -6,12 +6,12 @@ if [[ $# -ne 1 ]]; then
 fi
 
 episode=$1
-epath=static/episodes/2016/engineers.coffee.2016.${episode}.mp3
+epath=static/episodes/2017/engineers.coffee.2017.${episode}.mp3
 
 R=`dirname $0`
 
-rm -rf $R/.build
-cactus build
+#rm -rf $R/.build
+#cactus build
 
 set -x
 
