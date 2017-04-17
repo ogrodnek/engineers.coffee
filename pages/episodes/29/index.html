@@ -1,0 +1,30 @@
+episode: 29
+title: hindsight is 20/20
+subtitle: s3 outage, google cloud next, etc.
+date: 04-16-2017 11:05pm
+duration: 49:15
+length: 35841112
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- [chime](https://chime.aws/)
+- s3 outage
+    - [AWS Summary](https://aws.amazon.com/message/41926/)
+    - [Cloud downtime compared](https://www.theinformation.com/how-aws-stacks-up-against-rivals-on-downtime)
+- google cloud next
+    - [Cloud spanner](https://cloud.google.com/spanner/)
+    - [kaggle acquisition](https://cloudplatform.googleblog.com/2017/03/welcome-Kaggle-to-Google-Cloud.html)
+    - [container builder](https://cloudplatform.googleblog.com/2017/03/Google-Cloud-Container-Builder-a-fast-and-flexible-way-to-package-your-software.html)
+    - [video intelligence](https://cloud.google.com/blog/big-data/2017/03/announcing-google-cloud-video-intelligence-api-and-more-cloud-machine-learning-updates)
+    - [cloud jobs](https://cloud.google.com/jobs-api/)
+- [DynamoDB TTL](https://aws.amazon.com/blogs/aws/new-manage-dynamodb-items-using-time-to-live-ttl/)
+- [AWS Organizations](https://aws.amazon.com/blogs/aws/aws-organizations-policy-based-management-for-multiple-aws-accounts/)
+    - [Creating new accounts](https://twitter.com/esh/status/836871780560175107) (via [esh](https://twitter.com/esh))
+- [mysql event streams w/kinesis](https://aws.amazon.com/blogs/database/streaming-changes-in-a-database-with-amazon-kinesis/)
+    - [postgres w/kafka](https://www.confluent.io/blog/bottled-water-real-time-integration-of-postgresql-and-kafka/)
+
+{% endfilter %}
+{% endblock body %}
