@@ -1,0 +1,25 @@
+episode: 30
+title: i don't wanna host that
+subtitle: interesting lambda projects, VPNs/proxies, IAM, etc.
+date: 04-27-2017 10:07pm
+duration: 51:13
+length: 37252302
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- [https://isitonaws.com/](https://isitonaws.com/)
+    - [tim bray blog post re: lessions](https://www.tbray.org/ongoing/When/201x/2017/03/29/Is-it-on-AWS)
+    - [github repo](https://github.com/awslabs/IsItOnAWS)
+- [lambda SOCKS proxy](https://github.com/dan-v/awslambdaproxy)
+- [Algo VPN](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/)
+- [amazon promition for alexa skills](https://developer.amazon.com/alexa-skills-kit/alexa-aws-credits)
+- [atlassian/localstack](https://github.com/atlassian/localstack)
+- [amazon connect](https://aws.amazon.com/connect/)
+- [AWS IAM summaries](https://aws.amazon.com/blogs/security/move-over-json-policy-summaries-make-understanding-iam-policies-easier/)
+- [high speed trading behind your amazon purchase](https://www.wsj.com/articles/the-high-speed-trading-behind-your-amazon-purchase-1490532110)
+
+{% endfilter %}
+{% endblock body %}
