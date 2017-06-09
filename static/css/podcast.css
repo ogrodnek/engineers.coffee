@@ -1,0 +1,106 @@
+/* COLORS */
+a {
+  color: #ef5a30;
+  transition: all 0.5s;
+}
+a:hover {
+  text-decoration: underline;
+  color: #db3d11;
+}
+.container .jumbotron {
+  border-radius: 4px;
+  background: #f5f5f5;
+  margin-top: 2rem;
+  border: 1px solid #e8e8e8;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.container .jumbotron h1 {
+  font-size: 52px;
+}
+.container .jumbotron p {
+  font-size: 24px;
+}
+.container .jumbotron img {
+  max-height: 192px;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Catamaran', sans-serif;
+}
+.episode-title {
+  padding-bottom: 1px;
+  font-family: 'Catamaran', sans-serif;
+}
+.episode-title h3 {
+  font-size: 32px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.episode {
+  border-bottom: 1px solid #eee;
+  padding: 2rem;
+}
+.episode:first-child {
+  padding-top: 0;
+}
+.episode:last-child {
+  padding-bottom: 25px;
+}
+.episode p {
+  color: #333;
+  font-size: 18px;
+}
+.episode-show-notes {
+  padding-top: 20px;
+}
+.episode-meta {
+  padding-bottom: 25px;
+  padding-top: -10px;
+  color: #888;
+  font-weight: 350;
+  font-size: 16px;
+}
+.episode-archive-group ul {
+  padding: 0;
+}
+.episode-archive-group ul li {
+  list-style: none;
+}
+.episode-archive-group a {
+  font-size: 18px;
+}
+.episode-archive-date {
+  font-weight: 350;
+  font-size: 16px;
+  color: #888;
+  padding-right: 10px;
+}
+.episode-audio-controls {
+  padding-top: 20px;
+}
+ul.subscription-list li {
+  margin: 1rem 0;
+}
+.hosts .row {
+  margin-top: 2rem;
+}
+.subscribe-block {
+  padding-top: 1rem;
+}
+.archive-block {
+  margin-top: 4rem;
+}
+.host-block {
+  margin-top: 4rem;
+}
