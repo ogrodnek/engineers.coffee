@@ -1,4 +1,4 @@
-{% extends "blog.html" %}
+{% extends "blog2.html" %}
 
 {% block title %}{{ title }} | Sandwich News {% endblock title %}
 
@@ -32,13 +32,13 @@
 				{% for tag in tags %}
 				 <a href="#" class="btn btn-primary btn-xs">{{ tag }}</a>
 				{% endfor %}
-		    </p>        
+		    </p>
 
         <hr />
 	</article>
 
 	<footer>
-        
+
 	<nav id="post-nav">
 		<span class="prev">
 			{% if prevPost %}
@@ -48,7 +48,7 @@
 			{% endif %}
 		</span>
 
-		{% if nextPost and prevPost %} 
+		{% if nextPost and prevPost %}
 		  |
 		{% endif %}
 
@@ -61,6 +61,6 @@
 		</span>
 	</nav>
 	</footer>
-</section> 
+</section>
 
 {% endblock content %}

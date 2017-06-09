@@ -1,4 +1,4 @@
-{% extends "blog.html" %}
+{% extends "blog2.html" %}
 {% block content %}
 
 {% for post in posts|slice:":5" %}
@@ -26,4 +26,7 @@
 	<hr>
 </div>
 {% endfor %}
+<div style="padding-bottom:48px;">
+<a href="/archive/">View older episodes</a>
+</div>
 {% endblock content %}

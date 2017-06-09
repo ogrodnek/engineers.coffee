@@ -1,0 +1,17 @@
+{% extends "blog2.html" %}
+{% block content %}
+
+<div class="row episode-archive-group">
+  <div class="col-md-12">
+    <h3>All Episodes</h3>
+    <ul>
+{% for post in posts %}
+<li>
+  <span class="episode-archive-date">{{ post.date|date:"M d Y" }}</span>
+  <a href='/{{ post.short_path }}'>{{ post.title }}</a>
+</li>
+{% endfor %}
+</ul>
+</div>
+</div>
+{% endblock content %}

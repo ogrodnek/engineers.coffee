@@ -1,0 +1,32 @@
+episode: 32
+title: you never know if it's really gonna work
+subtitle: new echo announcements, kinesis analytics, lambda, kotlin
+date: 05-29-2017 1:15pm
+duration: 55:57
+length: 40668930
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+- new echo announcements
+    - [echo look](https://www.amazon.com/dp/B0186JAEWK/?tag=engcoffee-20)
+    - [echo show](http://amzn.to/2qvfz4F)
+    - [toymail](http://amzn.to/2quUEib)
+
+- [amazon jobs breakdown](https://www.cbinsights.com/blog/amazon-strategy-teardown/)
+- [aws community day event, June 15th, San Francisco](https://aws.amazon.com/blogs/aws/event-aws-community-day-in-san-francisco/)
+- [aws public datasets](https://aws.amazon.com/public-datasets/)
+    - [gov spending dataset](https://aws.amazon.com/blogs/aws/new-usaspending-gov-on-an-amazon-rds-snapshot/)
+- [AWS kinesis analytics anomaly detection](https://aws.amazon.com/blogs/big-data/real-time-clickstream-anomaly-detection-with-amazon-kinesis-analytics/)
+- [polly audiobook example](https://aws.amazon.com/blogs/ai/create-audiobooks-with-amazon-polly-and-aws-batch/)
+- weekly AWS complaint, java default lambda memory size is too small
+    - [Eric Hammond post, 'Pay The Same Price For Faster Execution'](https://alestic.com/2014/11/aws-lambda-speed/)
+    - [automatically determining lambda size](https://www.linkedin.com/pulse/aws-lambda-power-tuning-alex-casalboni)
+- is kotlin a good fit for java?
+    - [typescript at slack](https://slack.engineering/typescript-at-slack-a81307fa288d)
+- going back to stepfunctions
+    - [Creating a serverless AMI certification pipeline](https://www.slideshare.net/davidski1/creating-a-serverless-ami-certification-pipeline)
+
+{% endfilter %}
+{% endblock body %}

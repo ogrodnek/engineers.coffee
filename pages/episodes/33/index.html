@@ -1,0 +1,27 @@
+episode: 33
+title: faster, cheaper, better
+subtitle: google IO, AWS updates: IAM DB auth, codebuild
+date: 06-09-2017 11:15am
+duration: 27:39
+length: 20289191
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+  - google IO 2017
+      - [kotlin official android support](https://android-developers.googleblog.com/2017/05/android-announces-support-for-kotlin.html)
+      - [steve yegge, WHy Kotlin is Better than Whatever Dumb Language You're Using](http://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html)
+      - [google home phone calls](https://www.theverge.com/circuitbreaker/2017/5/17/15650214/google-home-phone-call-support-announced-io-2017)
+      - [google assistent coming to iphone](https://techcrunch.com/2017/05/17/google-launches-google-assistant-on-the-iphone/)
+      - [Cloud TPU (tensorflow)](https://cloud.google.com/tpu/)
+  - [IAM DB authentication](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
+  - [IAM resource level perms for AS](https://aws.amazon.com/about-aws/whats-new/2017/05/introducing-auto-scaling-resource-level-permissions/)
+  - codebuild updates
+      - [codebuild managed containers on github](https://github.com/aws/aws-codebuild-docker-images)
+  - [Mary's place at new Amazon building](http://www.npr.org/sections/thetwo-way/2017/05/10/527801805/new-amazon-building-in-seattle-will-include-a-homeless-shelter)
+  - google cloud speech more formats (wav, flac)
+
+{% endfilter %}
+{% endblock body %}
