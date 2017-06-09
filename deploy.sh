@@ -10,8 +10,8 @@ epath=static/episodes/2017/engineers.coffee.2017.${episode}.mp3
 
 R=`dirname $0`
 
-#rm -rf $R/.build
-#cactus build
+rm -rf $R/.build
+cactus build
 
 set -x
 
