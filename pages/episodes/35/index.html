@@ -1,0 +1,30 @@
+episode: 35
+title: don't give people AWS keys
+subtitle: dynamoDB autoscaling, mary meeker's internet trends, AWS security
+date: 07-10-2017 10:09pm
+duration: 46:47
+length: 34067538
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- [dynamoDB auto-scaling](https://aws.amazon.com/blogs/aws/new-auto-scaling-for-amazon-dynamodb/)
+    - [dynamic dynamoDB](https://github.com/sebdah/dynamic-dynamodb)
+    - [aws docs on dynamo throughput changes](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GuidelinesForTables.html#GuidelinesForTables.AvoidExcessivePTIncreases)
+- james gosling @ AWS
+- [mary meeker internet trends 2017](http://www.kpcb.com/internet-trends)
+- [Spinnaker](https://www.spinnaker.io/)
+- [onelogin security breach AWS credentials](http://www.zdnet.com/article/onelogin-security-chief-new-details-data-breach/)
+- [netflix aardvark and repokid](https://medium.com/netflix-techblog/introducing-aardvark-and-repokid-53b081bf3a7e)
+- [nvth public EBS volumes](https://www.nvteh.com/news/problems-with-public-ebs-snapshots)
+- [chirp alexa integration](https://aws.amazon.com/blogs/startups/send-data-over-voice-using-alexa-with-the-chirp-toolkit/)
+    - [alexa talking to google](https://www.youtube.com/watch?v=LEz9AU9c2qQ)
+- [washington post audio articles](https://www.washingtonpost.com/pr/wp/2017/06/09/the-washington-post-to-start-experimenting-with-audio-articles-using-amazon-polly/)
+- [aws chalice release 0.9.0 w/ binary support](https://aws.amazon.com/blogs/developer/chalice-version-0-9-0-is-now-available/)
+    - [python static typing](http://mypy-lang.org/)
+    - [donnie's kotlin lambda/apig PoC](https://github.com/floodfx/aws-lambda-kotlin-poc)
+
+{% endfilter %}
+{% endblock body %}
