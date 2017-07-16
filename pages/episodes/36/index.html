@@ -1,0 +1,23 @@
+episode: 36
+title: larger than life
+subtitle: re:invent, lambda by language, new aws features
+date: 07-16-2017 12:21pm
+duration: 34:53
+length: 25496724
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- [aws re:invent 2017](https://reinvent.awsevents.com/)
+- [kotlin conf](https://www.kotlinconf.com/)
+    - [processing](http://processing.org)
+- [lambda cold start times by language](https://read.acloud.guru/does-coding-language-memory-or-package-size-affect-cold-starts-of-aws-lambda-a15e26d12c76)
+    - [lambda performance by language](https://read.acloud.guru/comparing-aws-lambda-performance-when-using-node-js-java-c-or-python-281bef2c740f)
+- [rate based rules for WAF](https://aws.amazon.com/blogs/aws/protect-web-sites-services-using-rate-based-rules-for-aws-waf/)
+- [ec2 Systems Manager adds hierarchy, tagging](https://aws.amazon.com/about-aws/whats-new/2017/06/amazon-ec2-systems-manager-adds-hierarchy-tagging-and-notification-support-for-parameter-store/)
+- [postlight aws lambda migration / cost savings](https://trackchanges.postlight.com/serving-39-million-requests-for-370-month-or-how-we-reduced-our-hosting-costs-by-two-orders-of-edc30a9a88cd)
+
+{% endfilter %}
+{% endblock body %}
