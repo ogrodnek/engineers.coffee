@@ -1,0 +1,30 @@
+episode: 38
+title: why is it amazon's job to tell me what i want?
+subtitle: interesting lambda solutions and rants
+date: 11-10-2017 12:15pm
+duration: 45:46
+length: 33338725
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- feedback from [doug topin](https://twitter.com/dougtoppin) on using codestar to generate CF stack templates
+- [target tracking scaling policies](http://docs.aws.amazon.com/autoscaling/latest/userguide/as-scaling-target-tracking.html) for ec2 auto scaling
+- [Airbnb BinaryAlert: Real-time Serverless Malware Detection](https://medium.com/airbnb-engineering/binaryalert-real-time-serverless-malware-detection-ca44370c1b90)
+    - [yara: pattern matching for malware researchers](https://virustotal.github.io/yara/)
+- [api gateway error response customization](http://docs.aws.amazon.com/apigateway/latest/developerguide/customize-gateway-responses.html)
+    - enables custom authorizer CORS support
+- lambda @ edge GA
+    - a cloud guru article: [How to supercharge your static website with the power of AWS Lambda@Edge](https://read.acloud.guru/supercharging-a-static-site-with-lambda-edge-da5a1314238b)
+- [resize images on fly w/ s3 lambda api gateway](https://aws.amazon.com/blogs/compute/resize-images-on-the-fly-with-amazon-s3-aws-lambda-and-amazon-api-gateway/)
+- lambda should support docker runtime!
+- [AWS joins cloud native computing foundation](https://techcrunch.com/2017/08/09/aws-joins-the-cloud-native-computing-foundation/)
+- more amazon s3 bucket leaks -- keep your buckets secure!
+     - a cloud guru: [how to secure an s3 bucket](https://read.acloud.guru/how-to-secure-an-s3-bucket-7e2dbd34e81b)
+     - [AWS Config Update – New Managed Rules to Secure S3 Buckets](https://aws.amazon.com/blogs/aws/aws-config-update-new-managed-rules-to-secure-s3-buckets/)
+- [chromeless](https://github.com/graphcool/chromeless) - headless chrome on lambda
+
+{% endfilter %}
+{% endblock body %}
