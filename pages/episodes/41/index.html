@@ -1,0 +1,41 @@
+episode: 41
+title: let's talk about re:invent
+subtitle: some of our favorite re:invent 2017 announcements
+date: 12-14-2017 11:12am
+duration: 1:02:16
+length: 32126985
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- [summary of recent AWS announcements at re:invent](https://aws.amazon.com/new/reinvent/)
+    - [re:invent videos](https://www.youtube.com/user/AmazonWebServices/videos)
+    - [AWS podcast feed for session audio](http://aws-reinvent-audio.s3-website.us-east-2.amazonaws.com/2017/2017.html)
+- [serverless aurora](https://aws.amazon.com/blogs/aws/in-the-works-amazon-aurora-serverless/) (PREVIEW)
+- [aurora multi-master](https://aws.amazon.com/about-aws/whats-new/2017/11/sign-up-for-the-preview-of-amazon-aurora-multi-master/) (PREVIEW)
+- [global dynamo](https://aws.amazon.com/blogs/aws/new-for-amazon-dynamodb-global-tables-and-on-demand-backup/)
+- [dynamo backup/restore](https://aws.amazon.com/blogs/aws/new-for-amazon-dynamodb-global-tables-and-on-demand-backup/)
+- [transcribe](https://aws.amazon.com/blogs/aws/amazon-transcribe-scalable-and-accurate-automatic-speech-recognition/)
+- [translate](https://aws.amazon.com/blogs/aws/introducing-amazon-translate-real-time-text-language-translation/)
+- [comprehend](https://aws.amazon.com/blogs/aws/amazon-comprehend-continuously-trained-natural-language-processing/)
+- [rekognition video, kinesis video](https://aws.amazon.com/blogs/aws/launch-welcoming-amazon-rekognition-video-service/)
+- [sagemaker](https://aws.amazon.com/blogs/aws/sagemaker/)
+    - [jupyter notebooks](http://jupyter.org/)
+    - [fast.ai ML courses](http://www.fast.ai/)
+- [EKS](https://aws.amazon.com/blogs/aws/amazon-elastic-container-service-for-kubernetes/) (PREVIEW)
+- [fargate](https://aws.amazon.com/blogs/aws/aws-fargate/)
+- [easier spot workflow, hibernation](https://aws.amazon.com/blogs/aws/amazon-ec2-update-streamlined-access-to-spot-capacity-smooth-price-changes-instance-hibernation/)
+- [appsync](https://aws.amazon.com/appsync/)
+- lambda updates
+    - [traffic shifting, codedeploy lambda updates](https://aws.amazon.com/about-aws/whats-new/2017/11/aws-lambda-supports-traffic-shifting-and-phased-deployments-with-aws-codedeploy/)
+    - go support coming in 2018
+    - [3GB memory limit](https://aws.amazon.com/about-aws/whats-new/2017/11/aws-lambda-doubles-maximum-memory-capacity-for-lambda-functions/)
+    - [concurrency, throttling](https://aws.amazon.com/about-aws/whats-new/2017/11/set-concurrency-limits-on-individual-aws-lambda-functions/)
+- [cloud9](https://aws.amazon.com/about-aws/whats-new/2017/11/introducing-aws-cloud9/)
+- [s3 select](https://aws.amazon.com/blogs/aws/s3-glacier-select/)
+- [deeplens](https://aws.amazon.com/blogs/aws/deeplens/)
+
+{% endfilter %}
+{% endblock body %}
