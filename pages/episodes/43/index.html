@@ -1,0 +1,23 @@
+episode: 43
+title: I'm just complaining a lot today
+subtitle: lambda go support, SAM, SAM local, etc.
+date: 02-01-2018 3:15pm
+duration: 29:42
+length: 14696048
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+- [lambda go support](https://aws.amazon.com/blogs/compute/announcing-go-support-for-aws-lambda/)
+- [SAM local](https://github.com/awslabs/aws-sam-local)
+    - [concurrent requests causes java lambda containers to fail](https://github.com/awslabs/aws-sam-local/issues/154)
+    - [Eclipse SAM local support](https://aws.amazon.com/blogs/developer/aws-toolkit-for-eclipse-locally-debug-your-lambda-functions-and-api-gateway/)
+- Complaining about SAM
+    - [sammie](https://github.com/gpoitch/sammie)
+- [LambStatus](https://lambstatus.github.io/)
+- [aws activate](https://aws.amazon.com/activate/)
+
+{% endfilter %}
+{% endblock body %}

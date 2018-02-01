@@ -5,8 +5,9 @@ if [[ $# -ne 1 ]]; then
 	exit 1
 fi
 
+YEAR=2018
 episode=$1
-epath=static/episodes/2017/engineers.coffee.2017.${episode}.mp3
+epath=static/episodes/${YEAR}/engineers.coffee.${YEAR}.${episode}.mp3
 
 R=`dirname $0`
 
