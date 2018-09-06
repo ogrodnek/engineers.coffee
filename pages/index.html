@@ -11,7 +11,7 @@
 	<p class="blog-post-meta">{{ post.date|date:"M j, Y" }}</p>
 
 	<p class="blog-post-audio">
-	  <audio controls>
+	  <audio controls preload="none">
 	  	<source src="/static/episodes/{{ post.date|date:"Y" }}/engineers.coffee.{{ post.date|date:"Y" }}.{{ post.episode }}.mp3" />
 	  </audio>
 	</p>
