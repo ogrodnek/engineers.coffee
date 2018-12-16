@@ -1,0 +1,24 @@
+episode: 47
+title: 2018 re:invent lambda announcements
+subtitle: we're back with some 2018 re:invent lambda announcements: custom runtimes, layers, firecracker, and more!
+date: 12-15-2018 9:05pm
+duration: 33:47
+length: 18680239
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+- [Lambda Custom Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html)
+    - [aws rust runtime](https://github.com/awslabs/aws-lambda-rust-runtime)
+    - [3rd party partner runtimes and layers](https://aws.amazon.com/lambda/partners/)
+    - [nim runime](https://github.com/lambci/awslambda.nim)
+    - [walkthrough creating a bash runtime](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-walkthrough.html)
+- [Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)
+- [Firecracker](https://firecracker-microvm.github.io/)
+    - [AWS lambda under the hood session](https://www.youtube.com/watch?v=QdzV04T_kec)
+- [Lambda ALB](https://aws.amazon.com/blogs/networking-and-content-delivery/lambda-functions-as-targets-for-application-load-balancers/)
+- [DynamoDB On-Demand](https://aws.amazon.com/blogs/aws/amazon-dynamodb-on-demand-no-capacity-planning-and-pay-per-request-pricing/)
+
+{% endfilter %}
+{% endblock body %}
