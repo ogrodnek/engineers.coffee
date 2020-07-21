@@ -5,7 +5,7 @@ if [[ $# -ne 1 ]]; then
 	exit 1
 fi
 
-YEAR=2018
+YEAR=2020
 episode=$1
 epath=static/episodes/${YEAR}/engineers.coffee.${YEAR}.${episode}.mp3
 
